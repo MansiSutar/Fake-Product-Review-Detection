@@ -1,0 +1,132 @@
+<html class="js"><head><style>
+         body {
+     background-color: beige;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+.wrapper  {
+    padding: 0px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 50px auto;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: flex;
+
+}
+h1 {
+ -webkit-box-flex: 1;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+h3 {
+  -webkit-box-flex: 1;
+    flex: 1;
+    padding: 0px;
+    margin: 30px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    color: #4a4a4a;
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    margin-top: 0;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  
+}
+
+
+form{
+                position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    margin-bottom: 10%;
+    /* margin-left: -250px; */
+    /* width: 500px; */
+    height: 100px;
+    border: 4px solid #4a4a4a;
+          }
+form p{
+              width: 100%;
+    height: 100%;
+    text-align: center;
+    /* line-height: 170px; */
+    color: #4a4a4a;
+    font-family: Arial;
+          }
+form input{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: white;
+    border: white;
+    font-size: 25px;
+    color: black;
+          }
+form input[type=text] {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+form button{
+                color: #fff;
+    background: grey;
+    
+    width: -webkit-fill-available;
+    height: 35px;
+    margin-top: 120px;
+    margin-left: -4px;
+    border-radius: 4px;
+    border-bottom: 4px solid #0c100f;
+    transition: all .2s ease;
+    outline: none;
+    position: relative;
+          }
+  form button:hover{
+            background: #958a8a;
+            color: #a9adac;
+          }
+          form button:active{
+            border:0;
+          }
+</style>
+   </head>
+   <body>
+     <div class="wrapper">
+      <h3>Fake Product Review Detection</h3></h3> </div>
+      <div class="wrapper">
+      <header>
+        <h1>Enter review</h1>
+      </header>
+      <form action="/result" method="POST" enctype="multipart/form-data">
+        <input class="content-review" type="text" name="review" label="Write review here...."></INPUT>
+          <button class="submit" type="submit">Analyse</button>
+      </form>
+      </div>
+
+</body></html>
